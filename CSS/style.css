@@ -34,3 +34,62 @@ body {
     inset: 0;
     background: rgba(255,255,0,0.4);
 }
+/* Update the animation durations and timing */
+
+.chess-piece {
+    position: absolute;
+    user-select: none;
+    cursor: pointer;
+    z-index: 10;
+    transform-origin: center;
+    font-size: 50px !important;
+    width: 90% !important;
+    height: 90% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+
+/* Add this for the animated clone during movement */
+.piece-clone {
+    position: fixed;
+    z-index: 1000;
+    pointer-events: none;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chess-piece.dragging {
+    z-index: 20;
+    transform: scale(1.1);
+}
+
+.chess-square {
+    position: relative;
+}
+
+@keyframes captureAnimation {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(0.5); opacity: 0.5; }
+    100% { transform: scale(0); opacity: 0; }
+}
+
+
+.captured {
+    animation: captureAnimation 0.4s forwards;
+    z-index: 5;
+}
+
+/* Add this for the moving piece during animation */
+.sliding-piece {
+    position: absolute;
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
