@@ -1,4 +1,4 @@
-<!-- index.html -->
+<!-- MainMenu.html -->
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -43,13 +43,17 @@
 <h1>CHESS GAME</h1>
 <button id="playBtn">Bắt đầu chơi</button>
 <button id="guideBtn">Hướng dẫn</button>
+<button id="Bot vs Bot">Bot vs Bot</button>
 
 <script>
   document.getElementById('playBtn').onclick = () => {
-    window.location.href = "game.html"; // sang giao diện chơi
+    window.location.href = "color-selection.html"; // Chuyển sang trang chọn quân cờ
   };
   document.getElementById('guideBtn').onclick = () => {
     window.location.href = "guide.html"; // sang trang hướng dẫn
+  };
+  document.getElementById('Bot vs Bot').onclick = () => {
+    window.location.href = "EvE.html"; // sang trang Bot vs Bot
   };
 </script>
 </body>
