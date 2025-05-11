@@ -1,3 +1,7 @@
+[![Watch the video](https://img.youtube.com/vi/IVZYHFL5thE/maxresdefault.jpg)](https://youtu.be/IVZYHFL5thE)
+
+### [Video Demo](https://youtu.be/IVZYHFL5thE)
+
 ## Thư mục `modules`
 Thư mục này chứa các tệp JavaScript xử lý chức năng trò chơi ở cấp cao hơn, tập trung vào giao diện người dùng và cơ chế trò chơi. Các mô-đun ở đây chủ yếu phục vụ lớp ứng dụng.
 ### Danh sách các modules:
